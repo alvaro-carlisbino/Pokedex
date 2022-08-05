@@ -24,4 +24,5 @@ form.addEventListener('submit', async(e) => {
     document.getElementById("pokemon").alt = 'Pokemon '+name;
     document.getElementById("nome").innerHTML = name;
     document.getElementById("id").innerHTML = id + ' - ';
+    document.getElementById("tipos").innerHTML = data.types.map(type => type.type.name).join(', ');
 })
